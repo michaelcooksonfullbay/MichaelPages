@@ -1,0 +1,23 @@
+Project Key,Summary,Description,Test Type,Test Repository Folder,Area of Fullbay,Priority,Test Case State,Project Coverage
+  QAC,Update member with empty roles list - should return 400,Validates that updating a member with an empty roles list returns a 400
+  error,Manual,Horizon/api/users/ath-member-svc,HZ Users,2,Draft,Horizon - Front-End
+  QAC,Update member with null role in list - should return 400,Validates that updating a member with a null value in the roles list returns a 400
+  error,Manual,Horizon/api/users/ath-member-svc,HZ Users,2,Draft,Horizon - Front-End
+  QAC,Update member with role exceeding 50 characters - should return 400,Validates that updating a member with a role name longer than 50 characters
+  returns a 400 error,Manual,Horizon/api/users/ath-member-svc,HZ Users,3,Draft,Horizon - Front-End
+  QAC,Update member with role containing invalid character - should return 400,Validates that updating a member with a role containing invalid
+  characters returns a 400 error,Manual,Horizon/api/users/ath-member-svc,HZ Users,3,Draft,Horizon - Front-End
+  QAC,Update member with duplicate roles - should return 400,Validates that updating a member with duplicate roles returns a 400
+  error,Manual,Horizon/api/users/ath-member-svc,HZ Users,3,Draft,Horizon - Front-End
+  QAC,Create member with stytch_admin role - role appears in response,Verifies that creating a member with stytch_admin role correctly applies the role
+   in Stytch,Manual,Horizon/api/users/ath-member-svc,HZ Users,1,Draft,Horizon - Front-End
+  QAC,Create member with multiple roles - all roles applied,Verifies that creating a member with multiple roles correctly applies all roles in
+  Stytch,Manual,Horizon/api/users/ath-member-svc,HZ Users,2,Draft,Horizon - Front-End
+  QAC,Update member to add stytch_admin role - role appears in response,Verifies that updating a member to add stytch_admin role correctly persists the
+   change,Manual,Horizon/api/users/ath-member-svc,HZ Users,1,Draft,Horizon - Front-End
+  QAC,Update member to remove stytch_admin role - role disappears from response,Verifies that updating a member to remove stytch_admin role correctly
+  persists the change,Manual,Horizon/api/users/ath-member-svc,HZ Users,2,Draft,Horizon - Front-End
+  QAC,Create member with non-existent role - should return 400,Verifies that creating a member with a role that does not exist in Stytch returns a 400
+  error,Manual,Horizon/api/users/ath-member-svc,HZ Users,2,Draft,Horizon - Front-End
+  QAC,Update member with non-existent role - should return 400,Verifies that updating a member with a role that does not exist in Stytch returns a 400
+  error,Manual,Horizon/api/users/ath-member-svc,HZ Users,2,Draft,Horizon - Front-End
